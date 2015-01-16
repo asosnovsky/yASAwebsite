@@ -1,0 +1,36 @@
+.footer-wrapper {
+	background: $yorkDarkRed;
+	text-align: -webkit-center;
+	text-transform: uppercase;
+	color: $yorkWhite;
+	padding: 15% 0;
+
+	header {
+		h2 {
+			font-size: 2.7em;
+			font-weight: 700;
+		}
+		.byline {
+			margin-top: 1em;
+			display: block;
+			letter-spacing: 1px;
+			font-size: 1.2em;
+			color: rgb(175, 108, 108);
+		}
+	}
+
+	ul.icons {
+		margin-top: 1em;
+
+		li {
+			display: inline-block;
+			line-height: 1em;
+			padding: 0.5em 1em;
+
+			.glyphicon{
+				color: rgb(175, 108, 108);
+				font-size: 1.5em;
+			}
+		}
+	}
+}

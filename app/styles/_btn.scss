@@ -1,0 +1,39 @@
+.york-btn {
+		-webkit-appearance: none;
+		border: 2px solid;
+		border-color: $yorkRed;
+		color: $yorkRed;
+		cursor: pointer;
+		display: inline-block;
+		padding: 0.90em 1.2em;
+		letter-spacing: 1px;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 1.4em;
+		transition: all 0.35s ease-in-out;
+		-moz-transition: all 0.35s ease-in-out;
+		-webkit-transition: all 0.35s ease-in-out;
+		-o-transition: all 0.35s ease-in-out;
+		-ms-transition: all 0.35s ease-in-out;
+		transition: all 0.35s ease-in-out;
+	}
+.york-btn:hover {
+	border-color: $yorkWhite;
+	color: $yorkWhite;
+	background: $yorkRed;
+	text-decoration: none;
+}
+
+.york-inverse {
+	border-color: $yorkWhite;
+	color: $yorkWhite;
+	background: $yorkRed;
+}
+
+.york-inverse:hover {
+	border-color: $yorkRed;
+	color: $yorkRed;
+	background: $yorkWhite;
+	text-decoration: none;
+}
