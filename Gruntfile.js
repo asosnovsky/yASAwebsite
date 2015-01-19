@@ -387,7 +387,9 @@ module.exports = function (grunt) {
     }
   });
 
-
+   grunt.registerTask('startdist', 'Compile then start a connect web server', function (target) {
+    return grunt.task.run(['connect:dist:keepalive']);
+   });
   grunt.registerTask('serve', 'Compile then start a connect web server', function (target) {
     if (target === 'dist') {
       return grunt.task.run(['build', 'connect:dist:keepalive']);
