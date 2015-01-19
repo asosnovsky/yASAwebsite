@@ -11,40 +11,38 @@
 <div class="main-wrapper-2 row">
 	<div class="container" id="news-partof">
 		<hr>
-		<div class="col-md-6" id="recent_news_big_main">
+		<div class="col-md-6 newsbit text-box-white" id="recent_news_big_main">
 			<h1>{{tumblr.posts[0].title}}</h1>
 			<h6>{{tumblr.posts[0].time}}</h6>
 			<div class="row">
-				<div class="col-md-5">
-				<div ng-bind-html="tumblr.posts[0].img"></div>
-				</div>
-				<p class="col-md-7">
+				<img align="left" class="tumblr-pic" src="{{tumblr.posts[0].img}}">
+				<p>
 					{{tumblr.posts[0].body}}
-					<hr>
-					<a href="" class="york-white-btn">
-						Show More
-					</a>
 				</p>
+				<a href="" class="york-white-btn">
+					Show More
+				</a>
 			</div>
-			<hr>
+			<br>
 		</div>
 		<div class="col-md-1">
 		</div>
-		<div class="col-md-5" id="Want_be_part_of_the_ASAYU">
+		<div class="col-md-5 asayu-desc text-box-white" id="Want_be_part_of_the_ASAYU">
 			<h1>Want be part of the ASAYU?</h1>
 			<p>Any student who is currently enrolled in the Actuarial Science program at York University is automatically a member of the ASA. To receive e-mail updates on job opportunities and club events we recommend that you sign-up for the ASA Mailing List and YUconnect page.Signing up is an easy task. Simply press the link below, or send a email to: <b>actsciyorku@gmail.com</b></p>
 			<a href="https://yorku.collegiatelink.net/organization/asayu" class="york-white-btn">YUconnect Page</a>
-			<hr>
+			<br>
 		</div>
 	</div>
+	<hr>
 </div>
 
 <!-- Section Two -->
-<div class="main-wrapper-3 row">
+<div class="main-wrapper-3 row" id="York">
 	<section class="container">
 		<h2 class="row">Actuarial Science program at York</h2>
 		<p class="row">For more information about the program please press the buttom bellow.</p>
-		<a href="http://actsci.math.yorku.ca/" class="york-red-btn row">Program at York</a>
+		<a href="http://actsci.math.yorku.ca/" class="york-red-btn row"><i class="fa fa-graduation-cap"></i> Program at York</a>
 	</section>
 </div>
 
@@ -87,11 +85,11 @@
 		<div class="row">
 			<div class="col-md-2"></div>
 
-			<a href="#/employment" class="york-white-btn col-md-3"><i class="fa fa-building"></i> Employment</a>
+			<a href="" ng-click="goTo( 'employment' );" class="york-white-btn col-md-3"><i class="fa fa-building"></i> Employment</a>
 
 			<div class="col-md-2"></div>
 
-			<a href="#/qualification" class="york-white-btn col-md-3"><i class="fa fa-check-square-o"></i> Qualification</a>
+			<a href="" ng-click="goTo( 'qualification' );" class="york-white-btn col-md-3"><i class="fa fa-check-square-o"></i> Qualification</a>
 
 			<div class="col-md-2"></div>
 		</div>

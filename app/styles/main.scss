@@ -11,6 +11,8 @@ $yorkWhite: #f2f2f2;
 //	Imports
 @import "compass";
 @import "controlls.btn";
+@import "controlls.text-box";
+@import "controlls.general";
 @import "fixed.header";
 @import "fixed.footer";
 @import "pages.home";
@@ -30,8 +32,3 @@ body{
 	}
 }
 
-.york-text-center {
-	text-align: center;
-	text-align: -webkit-center;
-	text-align: -moz-center;
-}

@@ -85,17 +85,21 @@
 .main-wrapper-2 {
 	@extend .white-wrapper;
 	text-align: inherit !important;
-	#news-partof{
 
-		#recent_news_big_main {
-			.york-white-btn {
-				float: right;
-			}
-			img {
-				width: 250px;
-			}
+	.newsbit {
+
+		.york-white-btn {
+			margin: 1%;
+			float: right;
 		}
 	}
+
+	.asayu-desc {
+		.york-white-btn {
+			margin: 1%;
+		}
+	}
+
 }
 .main-wrapper-3 {
 	padding: 5% 0;
@@ -157,7 +161,7 @@
 .main-wrapper-5 {
 	@extend .red-wrapper;
 
-	padding: 5% 0;
+	padding: 8% 0;
 
 	.exec-pic{
 

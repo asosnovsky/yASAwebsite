@@ -1,0 +1,35 @@
+.text-box-white {
+	background: rgb(251, 232, 232);
+	border-radius: 15%;
+	@include transition(all, 0.35s, ease-in-out);
+	
+	&:hover {
+			background: $yorkRed;
+			color: $yorkWhite;
+			border-radius: 5%;
+			
+			.york-white-btn {
+				background: $yorkRed;
+				color: $yorkWhite;
+				border-color: $yorkWhite;
+
+				&:hover {
+					background: $yorkWhite;
+					color: $yorkRed;
+					border-color: $yorkRed;
+				}
+			}
+
+			img{
+				border-color: $yorkWhite;
+				border-radius: 2%;
+				@include transition(all, 0.35s, ease-in-out);
+
+				&:hover {
+					cursor: pointer;
+					border-color: $yorkRed;
+					border-radius: 10%;
+				}
+			}
+		}
+}
