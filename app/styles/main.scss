@@ -3,20 +3,17 @@
  */
 //	Colours
 $offWhite: #f8f8f8;
-$offBlack: #383838;
+$offBlack: #555555;
 $yorkRed: #8E0000;
 $yorkDarkRed: #660303;
 $yorkWhite: #f2f2f2;
 
-//	Controlls
-@import 'btn';
-
-//	Fixed
-@import 'header';
-@import 'footer';
-
-//	Pages
-@import 'home';
+//	Imports
+@import "compass";
+@import "controlls.btn";
+@import "fixed.header";
+@import "fixed.footer";
+@import "pages.home";
 
 //	Background
 html,body {
@@ -31,4 +28,10 @@ body{
 	p {
 		line-height: 200%;
 	}
+}
+
+.york-text-center {
+	text-align: center;
+	text-align: -webkit-center;
+	text-align: -moz-center;
 }
