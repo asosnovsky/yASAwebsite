@@ -7,10 +7,18 @@ var express = require('express')
 	, router = express.Router();
 
 app.use(express.static(__dirname + '/dist')); // set the static files location for the static html
-// app.use(express.static(__dirname + '/public')); // set the static files location /public/img will be /img for users
 app.use(morgan('dev'));                     // log every request to the console
 app.use(bodyParser());                      // pull information from html in POST
 app.use(methodOverride());                  // simulate DELETE and PUT
+
+app.get('*',function(req,res,next){
+	if(req.headers['x-forwarded-proto']!='https'){
+		res.redirect('http://api.tumblr.com'+req.url);
+		console.log('x-forwarded-proto');
+	}else{
+		next() /* Continue to other routes if we're not redirecting */
+	}
+});
 
 router.get('/', function(req, res, next) {
 	res.render('index.html');
