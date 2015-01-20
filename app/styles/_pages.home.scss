@@ -60,13 +60,14 @@
 .main-wrapper-1 {
 	height: 8 * $header-min-height;
 	padding: 6em 0em 3em 0em;
-	background: $yorkRed url(../images/banner.jpg) no-repeat;
+	background: $yorkRed $banner no-repeat;
 	background-position: center;
 	background-size: 1650px;
 	
 	.container {
 		padding: 0em 8em;
 		line-height: 100%;
+		margin-top: 5%;
 		@extend .york-text-center;
 
 		.banner {
@@ -110,38 +111,16 @@
 	padding: 5%;
 	.major {
 		padding: 5% 0;
-		@include transition(all, 0.35s, ease-in-out);
-
-		&:hover {
-			cursor: pointer; 
-			text-decoration: none;
-			background: $yorkRed;
-			color: $yorkWhite;
-		}
 	}
 	.special-icons {
 		text-align: initial;
-		margin-bottom: 0.80em;
-		line-height: 2em;
-		text-transform: uppercase;
-		@include transition(all, 0.35s, ease-in-out);
-		
+
 		ul {
 			list-style-type: none;
-		}
-		
-		&:hover {
-			cursor: pointer; 
-			text-decoration: none;
-			background: $yorkRed;
-			color: $yorkWhite;
-			font-size: 1.2em;
-			.glyphicon {
-				color: $yorkWhite;
-			}
+			padding: 0;
 		}
 
-		.glyphicon {
+		i {
 			float: left;
 			display: inline-block;
 			padding-right: 1em;

@@ -18,7 +18,7 @@ angular
 			})
 			.when('/about', {
 				templateUrl: 'views/about.html',
-				controller: 'AboutCtrl'
+				controller: 'MainCtrl'
 			})
 			.when('/qualification', {
 				templateUrl: 'views/qualification.html',
@@ -27,6 +27,17 @@ angular
 			.when('/employment', {
 				templateUrl: 'views/employment.html',
 				controller: 'MainCtrl'
+			})
+			.when('/news/:pag', {
+				templateUrl: 'views/news.html',
+				controller: 'NewsCtrl'
+			})
+			.when('/newsbit/:tid/:id', {
+				templateUrl: 'views/article.html',
+				controller: 'NewsbitCtrl'
+			})
+			.when('/news', {
+				redirectTo: '/news/1'
 			})
 			.otherwise({
 				redirectTo: '/'

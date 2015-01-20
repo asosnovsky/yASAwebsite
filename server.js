@@ -15,7 +15,6 @@ app.use(methodOverride());                  // simulate DELETE and PUT
 app.get('*',function(req,res,next){
 	if(req.headers['x-forwarded-proto']!='https'){
 		res.redirect('http://api.tumblr.com'+req.url);
-		console.log('x-forwarded-proto');
 	}else{
 		next() /* Continue to other routes if we're not redirecting */
 	}

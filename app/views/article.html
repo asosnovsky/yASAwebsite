@@ -1,27 +1,18 @@
-			<div id="main" class="wrapper style4">
-				<!--Content-->
-				<div id="content" class="container">
-					<div class="row">
-						<div class="9u" id="news_specifc">
-							<div class="row">
-									<img src="./images/Error/Error02.jpg" class="custom line" width="500">
-								</div>
-								<div class="row">
-									<div class="7u">
-										<h3>Error02</h3>
-										<h7>We couldn't find your article :(</h7>
-										<p style="margin-bottom:0px">The Url entered is likely wrong. ...</p>
-										<a href="#/news" class="News_button">Go Back</a>
-									</div>
-								</div>
-						</div>
-						<div class="3u">
-							<section class="sidebar">
-								<header><h2>Recent News</h2></header><br>
-								<ul class="style2" id="recent_news_small">
-								</ul>
-							</section>
-						</div>
+<div class="news wrapper">
+	<!--Content-->
+	<div id="content" class="container">
+		<div class="row">
+			<div class="col-md-9">
+				<div class="row">
+					<div class="7u">
+						<h1>{{tumblr.newsbit.title}}</h1>
+						<h6>Posted: {{tumblr.newsbit.time}}</h6>
+						<p ng-bind-html="tumblr.newsbit.body"></p>
 					</div>
 				</div>
 			</div>
+			<div class="col-md-3" ng-include="'views/sidenews.html'" scope="" onload="">
+			</div>
+		</div>
+	</div>
+</div>

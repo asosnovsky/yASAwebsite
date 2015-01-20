@@ -18,5 +18,4 @@ angular.module('yuAsaApp')
 	 * 
 	 */
 	$scope.goTo = $york.goTo;
-	
 });

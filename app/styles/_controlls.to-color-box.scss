@@ -1,0 +1,20 @@
+.to-color-box {
+	margin-bottom: 0.80em;
+	line-height: 2em;
+	text-transform: uppercase;
+	border-radius: 0%;
+	font-size: 1.1em;
+	@include transition(all, 0.35s, ease-in-out);
+
+	&:hover {
+		border-radius: 5%;
+		cursor: pointer;
+		text-decoration: none;
+		background: $yorkRed;
+		color: $yorkWhite;
+		font-size: 1.3em;
+		i {
+			color: $yorkWhite !important;
+		}
+	}
+}

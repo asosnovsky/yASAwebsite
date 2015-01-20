@@ -11,19 +11,20 @@ $yorkWhite: #f2f2f2;
 //	Variables
 $header-min-height: 50px;
 $york-font-family: 'Open Sans', sans-serif;
-
+$banner: url(../images/banner.jpg);
 //	Imports
 @import "compass";
 @import "controlls.btn";
 @import "controlls.text-box";
 @import "controlls.enlarge.scss";
 @import "controlls.sidebar-box.scss";
+@import "controlls.to-color-box.scss";
 @import "controlls.general";
 @import "fixed.header";
 @import "fixed.footer";
 @import "pages.wrapper";
 @import "pages.home";
-@import "pages.qualification";
+@import "pages.news";
 
 //	Background
 html,body {

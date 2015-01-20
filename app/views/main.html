@@ -12,14 +12,14 @@
 	<div class="container" id="news-partof">
 		<hr>
 		<div class="col-md-6 newsbit text-box-white" id="recent_news_big_main">
-			<h1>{{tumblr.posts[0].title}}</h1>
-			<h6>{{tumblr.posts[0].time}}</h6>
+			<h1>{{tumblr[0].title}}</h1>
+			<h6>{{tumblr[0].time}}</h6>
 			<div class="row">
-				<img align="left" class="tumblr-pic" src="{{tumblr.posts[0].img}}">
+				<img align="left" class="tumblr-pic" src="{{tumblr[0].img}}">
 				<p>
-					{{tumblr.posts[0].body}}
+					{{tumblr[0].body}}
 				</p>
-				<a href="" class="york-white-btn">
+				<a href="" ng-click="goTo( 'newsbit/' + tumblr[0].id + '/' + 'ASA')" class="york-white-btn">
 					Show More
 				</a>
 			</div>
@@ -49,21 +49,21 @@
 <!-- Section Three -->
 <div class="main-wrapper-4 row" id="What_is_an_actuary">
 	<section class="container">
-		<header class="major" >
+		<header class="major to-color-box" >
 			<h2>What is an Actuary?</h2>
-			<span class="byline">An actuary is a business professional who analyzes the financial consequences of risk. They evaluate the likelihood of uncertain future events, design creative ways to reduce their likelihood.. </span>
+			<p>An actuary is a business professional who analyzes the financial consequences of risk. They evaluate the likelihood of uncertain future events, design creative ways to reduce their likelihood.. </p>
 		</header>
 		<div class="row">
-			<div class="col-md-4 special-icons">
+			<div class="col-md-4 special-icons to-color-box">
 				<ul>
 					<li>
-						<i class="glyphicon glyphicon-pencil"></i>
+						<i class="fa fa-calculator"></i>
 						<h3>Mathematics</h3>
 						<p>An Actuary must be very quick and capable in devising mathematical proofs and techniques to solve problems.</p>
 					</li>
 				</ul>
 			</div>
-			<div class="col-md-4 special-icons">
+			<div class="col-md-4 special-icons to-color-box">
 				<ul>
 					<li>
 						<i class="glyphicon glyphicon-signal"></i>
@@ -72,7 +72,7 @@
 					</li>
 				</ul>
 			</div>
-			<div class="col-md-4 special-icons">
+			<div class="col-md-4 special-icons to-color-box">
 				<ul>
 					<li>
 						<i class="glyphicon glyphicon-fire"></i>
@@ -104,28 +104,28 @@
 		<div class="row">
 			<div class="col-md-3 exec-pic">
 				<a href="">
-					<img src="./images/Team/ManagingDirector.jpg" alt="">
+					<img src="./images/team/ManagingDirector.jpg" alt="">
 				</a>
 				<h3>Alexander Tam</h3>
 				<p>Managing Director</p>
 			</div>
 			<div class="col-md-3 exec-pic">
 				<a href="">
-					<img src="./images/Team/FinanceDirector.jpg" alt="">
+					<img src="./images/team/FinanceDirector.jpg" alt="">
 				</a>
 				<h3>Asad Durrani</h3>
 				<p>Finance Director</p>
 			</div>
 			<div class="col-md-3 exec-pic">
 				<a href="">
-					<img src="./images/Team/AcademicDirector.jpg" alt="">
+					<img src="./images/team/AcademicDirector.jpg" alt="">
 				</a>
 				<h3>Syed Asghar</h3>
 				<p>Academic Director</p>
 			</div>
 			<div class="col-md-3 exec-pic">
 				<a href="http://www.asosnovsky.me/#!/" target="_blank">
-					<img src="./images/Team/Webmaster.jpg" alt="">
+					<img src="./images/team/Webmaster.jpg" alt="">
 				</a>
 				<h3>Ariel Sosnovsky</h3>
 				<p>Communication Director</p>
@@ -138,14 +138,14 @@
 			</div>
 			<div class="col-md-3 exec-pic">
 				<a href="">
-					<img src="./images/Team/MarketingDirector1.jpg" alt="">
+					<img src="./images/team/MarketingDirector1.jpg" alt="">
 				</a>
 				<h3>Feodor Ploujnikov</h3>
 				<p>Marketing Director</p>
 			</div>
 			<div class="col-md-3 exec-pic">
 				<a href="">
-					<img src="./images/Team/MarketingDirector2.jpg" alt="">
+					<img src="./images/team/MarketingDirector2.jpg" alt="">
 				</a>
 				<h3>Scott Lundquist</h3>
 				<p>Marketing Director</p>

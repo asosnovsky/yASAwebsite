@@ -1,41 +1,48 @@
-			
-			<div id="main" class="wrapper style4">
 
-				<!-- Content -->
-				<div id="content" class="container">
-					<div class="row">
-						<div class="9u">
-							<section>
-								<header class="major">
-									<h2>News:</h2><br>
-									<div id="dateerr"></div>
-									<form action="demo_form.asp">
-									  Choose Date:
-									  <input type="month" id="date" value="2014-09">
-									  <a type="submit" class="News_button smallpadding" href="#/news" onClick="changeDate()">Pick</a>
-									</form>
-							</section>
-							<div class="row" id="recent_news_big">
-								<div class="row">
-									<img src="images/Error/Error01.gif" class="custom line" width="500">
-								</div>
-								<div class="row">
-									<div class="7u">
-										<h3>Error01</h3>
-										<h7>There is no news for this date,</h7>
-										<p style="margin-bottom:0px">Enjoy the comic!</p>
-										<a href="#/news" class="News_button">Go Back</a>
-									</div>
-								</div>
-							</div>
+<div id="main" class="news wrapper">
+	<!-- Content -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-9">
+				<section class="row">
+					<h1>News</h1><br>
+				</section>
+				<div class="row" ng-repeat="post in tumblr.requested_posts">
+					<div class="col-md-11 newsbit text-box-white">
+						<h1>{{post.title}}</h1>
+						<h6>{{post.time}}</h6>
+						<div class="row">
+							<!-- <img align="left" class="tumblr-pic" src="{{post.img}}"> -->
+							<p class="enlarge">
+								{{post.body}}
+							</p>
+							<a href="" ng-click="goTo( 'newsbit/' + post.id + '/' + $index)" class="york-white-btn">
+								Show More
+							</a>
 						</div>
-						<div class="3u">
-							<section class="sidebar">
-								<header><h2>Recent News</h2></header><br>
-								<ul class="style2" id="recent_news_small">
-								</ul>
-							</section>
-						</div>
+						<br>
 					</div>
 				</div>
+				<nav class="row">
+					<ul class="pagination">
+						<li>
+							<a href="" ng-click="changePag(-1)" aria-label="Previous">
+								<i aria-hidden="true">&laquo; Newer</i>
+							</a>
+						</li>
+						<li class="{{pag.class}}" ng-repeat="pag in pagnation">
+							<a href="" ng-click="changePag(pag.value)">{{pag.value}}</a>
+						</li>
+						<li>
+							<a href="" ng-click="changePag(0)" aria-label="Next">
+								<i aria-hidden="true">Older &raquo;</i>
+							</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
+			<div class="col-md-3" ng-include="'views/sidenews.html'" scope="" onload="">
+			</div>
+		</div>
+	</div>
+</div>

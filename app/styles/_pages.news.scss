@@ -1,0 +1,31 @@
+.news {
+	.container {
+		.sidebar-box {
+			h4 {
+				padding: 0 5px;
+				margin: 0;
+				font-weight: 700;
+			}
+			h5 {
+				padding: 0 5px;
+			}
+			background: rgba(233, 218, 218, 0.19);
+			border-radius: 1%;
+		}
+		.newsbit {
+			h1 {
+				padding-bottom: 0;
+				font-size: 1.5em;
+			}
+			p {
+				min-height: 7em;
+			}
+			.york-white-btn {
+				float: right;
+				margin-right: 5%;
+				font-size: 1em;
+				font-weight: 600;
+			}
+		}
+	}
+}

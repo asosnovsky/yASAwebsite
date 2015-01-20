@@ -6,7 +6,9 @@
 
 .tumblr-pic {
 	padding: 0;
-	width: 200px;
+	// width: 200px;
+	min-height: 100px;
+	max-width: 250px;
 	border: 2px $yorkRed solid;
 	border-radius: 5%;
 	margin: 0 1%;
