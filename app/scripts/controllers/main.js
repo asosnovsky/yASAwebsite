@@ -9,7 +9,7 @@
  * Controller of the yuAsaApp
  */
 angular.module('yuAsaApp')
-	.controller('MainCtrl', function ($scope, $http, $sce, $location) {
+	.controller('MainCtrl', function ($scope, $http, $sce, $york) {
 	window.__scope = $scope;
 	//-----------------------------------------
 	//	Loading Tumblr Posts
@@ -18,11 +18,16 @@ angular.module('yuAsaApp')
 	$http.jsonp('http://api.tumblr.com/v2/blog/asayorku.tumblr.com/posts?api_key=9JEt1AQMzS7zhaLwn9I9kRlyq0MHzW7SkGxyjg3PIGmGKbC1Ek&callback=JSON_CALLBACK')
 		.success(function (data) {
 			data.response.posts.forEach(function (value) {
-				var imgtext = value.body.substring(
-					(value.body.indexOf('<img')),
-					(value.body.indexOf('"/>')+3)
-				);
-				var img = $(imgtext)[0].src;
+				
+				var img;
+				var imgtext = value.body.substring((value.body.indexOf('<img')),(value.body.indexOf('"/>')+3));
+				try {
+					img = $(imgtext)[0].src;
+				}
+				catch(err) {
+					img = '';
+				}
+
 				$scope.tumblr.posts.push({
 					title:value.title,
 					body:value.body.replace(/<[^>]*>/g, '').substr(0,210)+'...',
@@ -37,9 +42,8 @@ angular.module('yuAsaApp')
 	 * 
 	 * @param  {String} address
 	 * 
+	 * @param  {String} hash
+	 * 
 	 */
-	$scope.goTo = function goTo (address) {
-		$location.path(address).replace();
-		window.scrollTo(0,0);
-	};
+	$scope.goTo = $york.goTo;
 });

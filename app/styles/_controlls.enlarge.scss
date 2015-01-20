@@ -1,0 +1,10 @@
+.enlarge {
+	@include transition(all, 0.35s, ease-in-out);
+	&:hover {
+		font-size: 1.2em;
+		text-decoration: none;
+		border: 3px rgba(0, 0, 0, 0.04) solid;
+		border-radius: 5%;
+		background: rgba(228, 228, 228, 0.22);
+	}
+}

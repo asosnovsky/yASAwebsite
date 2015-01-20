@@ -1,0 +1,18 @@
+.sidebar-box {
+	border-radius: 15%;
+	@include transition(all, 0.35s, ease-in-out);
+	a:hover {
+		text-decoration: none;
+	}
+	
+	img {
+		margin: 5%;
+	}
+	p {
+		margin: 5%;
+	}
+	&:hover {
+		border-radius: 5%;
+		border: 3px $offBlack solid;
+	}
+}

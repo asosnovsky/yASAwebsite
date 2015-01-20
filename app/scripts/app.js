@@ -9,7 +9,7 @@
  * Main module of the application.
  */
 angular
-.module('yuAsaApp', ['ngRoute'])
+.module('yuAsaApp', ['ngRoute','ngClipboard','ui.bootstrap'])
 	.config(function ($routeProvider) {
 		$routeProvider
 			.when('/', {

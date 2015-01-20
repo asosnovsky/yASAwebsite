@@ -11,6 +11,10 @@
 	text-decoration: none;
 	text-transform: uppercase;
 
+	.nav {
+		min-height: $header-min-height;
+	}
+	
 	ul.nav.navbar-nav {
 		margin: 0 22.5%;
 	}

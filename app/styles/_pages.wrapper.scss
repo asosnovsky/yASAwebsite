@@ -1,0 +1,22 @@
+.wrapper {
+	margin-top: 1.5 * $header-min-height;
+	margin-bottom: 1.5 * $header-min-height;
+	color: $offBlack;
+
+	h1 {
+		font-weight: bold;
+		text-transform: uppercase;
+		padding-bottom: 0.5em;
+	}
+
+	h2 {
+		font-weight: bold;
+		font-size: 1.5em;
+	}
+
+	p {
+		&.indent {
+			text-indent: 50px;
+		}
+	}
+}

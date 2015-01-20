@@ -1,1 +1,1 @@
-web: grunt startdist
+web: node server.js

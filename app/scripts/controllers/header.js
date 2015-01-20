@@ -8,17 +8,15 @@
  * Controller of the yuAsaApp
  */
 angular.module('yuAsaApp')
-	.controller('HeaderCtrl', function ($scope, $location) {
-
+	.controller('HeaderCtrl', function ($scope, $location, $york) {
 	/**
 	 * Go to Address
 	 * 
 	 * @param  {String} address
+	 *
+	 * @param  {String} hash
 	 * 
 	 */
-	$scope.goTo = function goTo (address) {
-		$location.path(address).replace();
-		window.scrollTo(0,0);
-	};
+	$scope.goTo = $york.goTo;
 	
 });
