@@ -7,6 +7,7 @@ var express = require('express')
 	, router = express.Router();
 
 app.use(express.static(__dirname + '/dist')); // set the static files location for the static html
+app.use(express.static(__dirname + '/dist/views'));
 app.use(morgan('dev'));                     // log every request to the console
 app.use(bodyParser());                      // pull information from html in POST
 app.use(methodOverride());                  // simulate DELETE and PUT
