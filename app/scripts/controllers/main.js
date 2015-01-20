@@ -15,7 +15,7 @@ angular.module('yuAsaApp')
 	//	Loading Tumblr Posts
 	//-----------------------------------------
 	$scope.tumblr = {posts:[]};
-	$http.jsonp('http://api.tumblr.com/v2/blog/asayorku.tumblr.com/posts?api_key=9JEt1AQMzS7zhaLwn9I9kRlyq0MHzW7SkGxyjg3PIGmGKbC1Ek&callback=JSON_CALLBACK')
+	$http.jsonp('//api.tumblr.com/v2/blog/asayorku.tumblr.com/posts?api_key=9JEt1AQMzS7zhaLwn9I9kRlyq0MHzW7SkGxyjg3PIGmGKbC1Ek&callback=JSON_CALLBACK')
 		.success(function (data) {
 			data.response.posts.forEach(function (value) {
 				
