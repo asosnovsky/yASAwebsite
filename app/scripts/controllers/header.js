@@ -18,4 +18,11 @@ angular.module('yuAsaApp')
 	 * 
 	 */
 	$scope.goTo = $york.goTo;
+
+	//-----------------------------------------
+	//	Collapses navbar when toggled 
+	//-----------------------------------------
+	$('.nav a').on('click', function(){
+		$('.navbar-toggle').click();
+	});
 });

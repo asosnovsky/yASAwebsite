@@ -4,7 +4,8 @@
 	text-transform: uppercase;
 	color: $yorkWhite;
 	padding: 10% 0 20% 0;
-
+	// margin: 0% -5%;
+	
 	header {
 		h2 {
 			font-size: 3em;
@@ -22,7 +23,7 @@
 
 	ul.icons {
 		margin-top: 1em;
-
+		padding: 0;
 		li {
 			display: inline-block;
 			line-height: 1em;

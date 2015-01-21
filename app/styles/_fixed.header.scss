@@ -10,7 +10,9 @@
 	letter-spacing: 2px;
 	text-decoration: none;
 	text-transform: uppercase;
-
+	.navbar-brand {
+		display: none;
+	}
 	.nav {
 		min-height: $header-min-height;
 	}
@@ -33,6 +35,31 @@
 		}
 		.navbar-brand {
 			color: $yorkWhite;
+		}
+	}
+
+	@media (max-width:766px) {
+		.navbar-brand {
+			display: inherit;
+		}
+		.navbar-collapse {
+			ul{
+				margin: 0 !important;
+			}
+		}
+	}	
+	@media (max-width:1000px) and (min-width:767px) {
+		.navbar-collapse {
+			ul{
+				margin: 0 8.5% !important;
+			}
+		}
+	}
+	@media (max-width:1200px) and (min-width:1001px){
+		.navbar-collapse {
+			ul{
+				margin: 0 18.5% !important;
+			}
 		}
 	}
 }

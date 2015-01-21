@@ -1,9 +1,9 @@
 <section class="sidebar" ng-controller="SideBarCtrl">
 	<h2>Recent News</h2>
 	<div class="row sidebar-box" ng-repeat="post in sidebar.current_posts">
-		<!-- <img src="{{post.img}}" width="250px"> -->
+		<img ng-src="{{post.img}}" width="250px">
 		<h4>{{post.title}}</h4>
-		<h5>{{post.time}}</h5>
+		<h5>Posted: {{post.time}}</h5>
 		<a href="" ng-click="goTo( 'newsbit/' + post.id + '/' + 'ASA')" >
 			<p class="enlarge">{{post.body}}</p>
 		</a>

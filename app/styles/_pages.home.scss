@@ -1,3 +1,6 @@
+//-----------------------------------------
+//	Base Wrappers
+//-----------------------------------------
 .white-wrapper {
 	background: $yorkWhite;
 	@extend .york-text-center;
@@ -57,11 +60,14 @@
 	}
 }
 
+//-----------------------------------------
+//	Main wrappers
+//-----------------------------------------
 .main-wrapper-1 {
-	height: 8 * $header-min-height;
+	height: 10 * $header-min-height;
 	padding: 6em 0em 3em 0em;
 	background: $yorkRed $banner no-repeat;
-	background-position: center;
+	background-position: $banner-position;
 	background-size: 1650px;
 	
 	.container {
@@ -79,6 +85,12 @@
 			opacity: 0.9;
 			margin: 3px 0px;
 			color: $yorkWhite;
+		}
+	}
+	@media (max-width:766px) {
+		.container {
+			// font-size: 2.5em;
+			padding: 0;
 		}
 	}
 }
@@ -100,7 +112,6 @@
 			margin: 1%;
 		}
 	}
-
 }
 .main-wrapper-3 {
 	padding: 5% 0;
@@ -136,11 +147,11 @@
 		}
 	}
 }
-
 .main-wrapper-5 {
 	@extend .red-wrapper;
 
-	padding: 8% 0;
+	padding: 8%;
+	// margin: 0% -5%;
 
 	.exec-pic{
 

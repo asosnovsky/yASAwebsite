@@ -18,6 +18,17 @@
 		&.indent {
 			text-indent: 50px;
 		}
+		.noline:hover {
+			text-decoration: none;
+		}
+		img.small {
+			margin-bottom: 5px;
+			width: 100px;
+			
+			&:hover{
+				opacity: 0.7;
+			}
+		}
 	}
 	
 	span {
