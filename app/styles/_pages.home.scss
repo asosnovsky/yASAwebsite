@@ -146,6 +146,12 @@
 			font-size: 1.2em;
 		}
 	}
+	
+	@media (max-width:1000px) {
+		a.york-white-btn {
+			margin: 5px;
+		}
+	}
 }
 .main-wrapper-5 {
 	@extend .red-wrapper;

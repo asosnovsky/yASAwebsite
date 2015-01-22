@@ -1,4 +1,9 @@
+.sidenews {
+	background: rgb(246, 230, 230);
+	border-radius: 5%;
+}
 .sidebar-box {
+	border: 1px rgba(190, 1, 1, 0.06) solid;
 	border-radius: 15%;
 	@include transition(all, 0.35s, ease-in-out);
 	a:hover {

@@ -75,7 +75,7 @@ angular.module('yuAsaApp')
 					$scope.pagnation = [
 						{class:'', value:current_pag - 4, href:''},
 						{class:'', value:current_pag - 3, href:''},
-						{class:'active', value:current_pag - 2, href:''},
+						{class:'', value:current_pag - 2, href:''},
 						{class:'', value:current_pag - 1, href:''},
 						{class:'active', value:current_pag , href:''},
 					];

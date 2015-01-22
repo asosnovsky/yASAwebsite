@@ -10,33 +10,35 @@
 <!-- Section One -->
 <div class="main-wrapper-2 row">
 	<div class="col-md-12">
-		<div class="container" id="news-partof">
+		<div class="container">
 			<hr>
-			<div class="col-md-6 newsbit text-box-white" id="recent_news_big_main">
-				<h1>{{tumblr[0].title}}</h1>
-				<h6>{{tumblr[0].time}}</h6>
 				<div class="row">
-					<img align="left" class="tumblr-pic" src="{{tumblr[0].img}}">
-					<p>
-						{{tumblr[0].body}}
-					</p>
-					<a href="" ng-click="goTo( 'newsbit/' + tumblr[0].id + '/' + 'ASA')" class="york-white-btn">
-						Show More
-					</a>
+				<div class="col-md-6 newsbit text-box-white" id="recent_news_big_main">
+					<h1>{{tumblr[0].title}}</h1>
+					<h6>{{tumblr[0].time}}</h6>
+					<div class="row">
+						<img align="left" class="tumblr-pic" src="{{tumblr[0].img}}">
+						<p>
+							{{tumblr[0].body}}
+						</p>
+						<a href="" ng-click="goTo( 'newsbit/' + tumblr[0].id + '/' + 'ASA')" class="york-white-btn">
+							Show More
+						</a>
+					</div>
+					<br>
 				</div>
-				<br>
+				<div class="col-md-1">
+				</div>
+				<div class="col-md-5 asayu-desc text-box-white" id="Want_be_part_of_the_ASAYU">
+					<h1>Want be part of the ASAYU?</h1>
+					<p>Any student who is currently enrolled in the Actuarial Science program at York University is automatically a member of the ASA. To receive e-mail updates on job opportunities and club events we recommend that you sign-up for the ASA Mailing List and YUconnect page.Signing up is an easy task. Simply press the link below, or send a email to: <b>actsciyorku@gmail.com</b></p>
+					<a href="https://yorku.collegiatelink.net/organization/asayu" class="york-white-btn">YUconnect Page</a>
+					<br>
+				</div>
 			</div>
-			<div class="col-md-1">
-			</div>
-			<div class="col-md-5 asayu-desc text-box-white" id="Want_be_part_of_the_ASAYU">
-				<h1>Want be part of the ASAYU?</h1>
-				<p>Any student who is currently enrolled in the Actuarial Science program at York University is automatically a member of the ASA. To receive e-mail updates on job opportunities and club events we recommend that you sign-up for the ASA Mailing List and YUconnect page.Signing up is an easy task. Simply press the link below, or send a email to: <b>actsciyorku@gmail.com</b></p>
-				<a href="https://yorku.collegiatelink.net/organization/asayu" class="york-white-btn">YUconnect Page</a>
-				<br>
-			</div>
+			<hr>
 		</div>
 	</div>
-	<hr>
 </div>
 
 <!-- Section Two -->
@@ -91,11 +93,13 @@
 		<div class="row">
 			<div class="col-md-2"></div>
 
-			<a href="" ng-click="goTo( 'employment' );" class="york-white-btn col-md-3"><i class="fa fa-building"></i> Employment</a>
+			<div class="col-md-4">
+				<a href="" ng-click="goTo( 'employment' );" class="york-white-btn"><i class="fa fa-building"></i> Employment</a>
+			</div>
 
-			<div class="col-md-2"></div>
-
-			<a href="" ng-click="goTo( 'qualification' );" class="york-white-btn col-md-3"><i class="fa fa-check-square-o"></i> Qualification</a>
+			<div class="col-md-4">
+				<a href="" ng-click="goTo( 'qualification' );" class="york-white-btn"><i class="fa fa-check-square-o"></i> Qualification</a>
+			</div>
 
 			<div class="col-md-2"></div>
 		</div>

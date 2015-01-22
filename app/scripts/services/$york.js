@@ -99,7 +99,7 @@ angular.module('yuAsaApp')
 								img = $(imgtext)[0].src;
 							}
 							catch(err) {
-								img = 'images/misc/no_image.jpg';
+								img = './images/misc/noimage.jpg';
 							}
 							//-----------------------------------------
 							//	Create a full post

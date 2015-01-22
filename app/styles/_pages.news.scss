@@ -13,6 +13,13 @@
 			border-radius: 1%;
 		}
 		.newsbit {
+			border-radius: 5%;
+			border: 1px rgba(198, 101, 101, 0.34) solid;
+
+			&:hover {
+				border-radius: 2%;
+			}
+
 			h1 {
 				padding-bottom: 0;
 				font-size: 1.5em;
@@ -26,6 +33,14 @@
 				font-size: 1em;
 				font-weight: 600;
 			}
+		}
+	}
+}
+
+.article {
+	@media (max-width:600px) {
+		img {
+			width: 100%;
 		}
 	}
 }

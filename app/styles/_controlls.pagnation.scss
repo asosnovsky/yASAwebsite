@@ -1,0 +1,23 @@
+.pagination {
+	li {
+		a {
+			color: $yorkRed;
+
+			&:hover {
+				color: #A93B3B;
+			}
+		}
+
+		&.active {
+			a {
+				color: $yorkWhite;
+				background: $yorkRed;
+				border-color: $yorkRed;
+
+				&:hover {
+					background: $yorkRed;
+				}
+			}
+		}
+	}
+}

@@ -22,7 +22,9 @@ angular.module('yuAsaApp')
 	//-----------------------------------------
 	//	Collapses navbar when toggled 
 	//-----------------------------------------
-	$('.nav a').on('click', function(){
-		$('.navbar-toggle').click();
-	});
+	if(window.screen.width <= 760){
+		$('.nav a').on('click', function(){
+			$('.navbar-toggle').click();
+		});
+	}
 });
