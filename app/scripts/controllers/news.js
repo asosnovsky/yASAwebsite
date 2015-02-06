@@ -25,7 +25,7 @@ angular.module('yuAsaApp')
 				//	Pagnation
 				//-----------------------------------------
 				var current_pag = parseInt($routeParams.pag);//	retrieve current pagnation
-				var max_pag = Math.ceil(parseInt(tumblr.total_posts)/5);
+				var max_pag = Math.ceil(parseInt(tumblr.total_posts)/5);//	max_pag = Ceiling(total_posts/5);
 				
 				/**
 				 * Changes Pagation
@@ -34,7 +34,6 @@ angular.module('yuAsaApp')
 				 *   
 				 */
 				$scope.changePag = function (pag){
-					console.log(pag);
 					if(pag === 0){//	Forwards
 						$york.goTo('news/' + (current_pag + 1));
 					}else if(pag === -1){//	Backwards
@@ -91,8 +90,8 @@ angular.module('yuAsaApp')
 				//	Determine what to show
 				//-----------------------------------------
 				var p = 5*(current_pag-1);//	Find current posts
-				var max_p = 5*(current_pag-1) + 5;//	Max number of posts
-				// max_p - p = 5; hence only 5 posts will show
+				var max_p = 4*(current_pag-1) + 4;//	Max number of posts
+				// hence only 5 posts will be shown ||(0,4)|| = 5
 			
 				while (p <= tumblr.total_posts - 1 && p <= max_p){
 					$scope.tumblr.requested_posts.push(tumblr.partialposts[p]);
