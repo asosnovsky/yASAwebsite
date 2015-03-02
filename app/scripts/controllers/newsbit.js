@@ -8,7 +8,6 @@
  */
 angular.module('yuAsaApp')
 	.controller('NewsbitCtrl', function ($scope, $york, $routeParams) {
-
 	$scope.tumblr = {newsbit: {}};
 	//-----------------------------------------
 	//	Loading Tumblr Posts
@@ -20,6 +19,8 @@ angular.module('yuAsaApp')
 			}else{
 				$scope.tumblr.newsbit = data;
 			}
+			$('meta[property="og:image"]')[0].content = $scope.tumblr.newsbit.img;
+			$('meta[property="og:description"]')[0].content = $scope.tumblr.newsbit.title;
 		});
 	}else{
 		$york.tumblr.get(function(err, tumblr){
@@ -28,6 +29,8 @@ angular.module('yuAsaApp')
 			}else{
 				$scope.tumblr.newsbit = tumblr;
 			}
+			$('meta[property="og:image"]')[0].content = $scope.tumblr.newsbit.img;
+			$('meta[property="og:description"]')[0].content = $scope.tumblr.newsbit.title;
 		});
 	}
 });

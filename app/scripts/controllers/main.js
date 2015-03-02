@@ -8,6 +8,8 @@
  */
 angular.module('yuAsaApp')
 	.controller('MainCtrl', function ($scope, $york) {
+	$('meta[property="og:image"]')[0].content = 'images/banner.jpg';
+	$('meta[property="og:description"]')[0].content = 'the Actuarial Student Association Club at YorkU main page.';
 	//-----------------------------------------
 	//	Loading Tumblr Posts
 	//-----------------------------------------

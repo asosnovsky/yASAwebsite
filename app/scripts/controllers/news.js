@@ -9,7 +9,8 @@
  */
 angular.module('yuAsaApp')
 	.controller('NewsCtrl', function ($scope, $york, $routeParams, $location) {
-		
+		$('meta[property="og:image"]')[0].content = 'images/ASA/ASA.jpg';
+	$('meta[property="og:description"]')[0].content = 'the Actuarial Student Association Club at YorkU News Page.';
 		$scope.goTo = $york.goTo;
 		//-----------------------------------------
 		//	Define our container

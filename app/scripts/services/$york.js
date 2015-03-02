@@ -109,10 +109,10 @@ angular.module('yuAsaApp')
 								id: value.id,
 								body: $sce.trustAsHtml(value.body),
 								link: value.post_url,
-								time: moment(value.date).fromNow(),
+								time: moment(value.date.replace(' ','T').replace(' GMT','Z')).fromNow(),
 								img: img
 							};
-
+							window.__value = value;
 							//-----------------------------------------
 							//	Create a partial posts
 							//-----------------------------------------
@@ -121,7 +121,7 @@ angular.module('yuAsaApp')
 								id: value.id,
 								body: value.body.replace(/<[^>]*>/g, '').substr(0,210)+'...',
 								link: value.post_url,
-								time: moment(value.date).fromNow(),
+								time: moment(value.date.replace(' ','T').replace(' GMT','Z')).fromNow(),
 								img: img
 							};
 
