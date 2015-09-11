@@ -20,6 +20,14 @@ angular
 				templateUrl: 'views/about.html',
 				controller: 'MainCtrl'
 			})
+			.when('/case-competition', {
+				templateUrl: 'views/case.html',
+				controller: 'MainCtrl'
+			})
+			.when('/tutorials', {
+				templateUrl: 'views/tutorials.html',
+				controller: 'MainCtrl'
+			})
 			.when('/qualification', {
 				templateUrl: 'views/qualification.html',
 				controller: 'MainCtrl'

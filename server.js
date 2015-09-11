@@ -13,7 +13,7 @@ app.use(bodyParser());                      // pull information from html in POS
 app.use(methodOverride());                  // simulate DELETE and PUT
 
 app.get('*',function(req,res,next){
-	if(req.headers['x-forwarded-proto']!='https'){
+	if(req.headers['x-forwarded-proto']!=='https'){
 		res.redirect('http://api.tumblr.com'+req.url);
 	}else{
 		next() /* Continue to other routes if we're not redirecting */
